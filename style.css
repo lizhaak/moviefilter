@@ -1,0 +1,73 @@
+body {
+	background-color: #9b9cc1;
+}
+
+h1 {
+	color: #040b5b;
+	font-size: 3em;
+	margin-bottom: 25px;
+	margin-left: 45px;
+}
+
+input {
+	padding: 7px;
+}
+
+.alert-warning{
+	width: 250px;
+  margin-top: 25px;
+  margin-left: 60px;
+}
+
+.alert-danger {
+	width: 475px;
+  margin-top: 25px;
+}
+
+input {
+    font-size: 15px;
+}
+
+label {
+  font-family: arial;
+  color: #040b5b;
+  margin-left: 5px;
+}
+
+div#title {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+div#year {
+  font-size: 30px;
+  text-align: center;
+}
+
+div#type {
+  font-size: 30px;
+  text-align: center;
+}
+
+div#imbdID {
+  font-size: 25px;
+  margin-top: 20px;
+}
+
+div#poster {
+  font-size: 34px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.btn-success {
+	margin-left: 5px;
+}
+
+a#imbdID {
+  font-size: large;
+  margin-bottom: 25px;
+  margin-top: 15px;
+  text-align: center;
+}

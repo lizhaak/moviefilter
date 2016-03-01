@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Movie Filter</title>
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="main.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-4"></div>
+					<h1 class="col-md-4">Movie Filter</h1>
+					<div class="col-md-4"></div>
+				</div>
+			<div class="row">
+				<div class="col-xs-3 col-sm-3"></div>
+				<div class="col-md-8">
+					<label for="t">Title: </label>
+					<input type="text" id="titleSearch" placeholder='Find Movie by Title' required>
+					<label for"y"> Year: </label>
+					<input type="number" id="yearSearch" placeholder='XXXX' min="1600" max="2018">
+					<label for="c"> Category: </label>
+					<select id="typeSearch" class="btn btn-default dropdown-toggle">
+						<option value="movie">Movie</option>
+						<option value="series">Series</option>
+						<option value="episode">Episode</option>
+					</select>
+					<button type="button" class="btn btn-success" id="find">Find <span class="glyphicon glyphicon-step-forward"></span></button>
+				</div>
+				<div class="col-md-4"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4">
+				<div class="alert alert-warning alert-dismissible" role="alert">
+		  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  			<span aria-hidden="true">&times;</span>
+		  		</button>
+		  		Please enter a movie title!
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="alert alert-danger alert-dismissible col-md-4" role="alert">
+		  		<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+		  			<span aria-hidden="true">&times;</span>
+		  		</button>
+		  		Sorry, we are unable to find this movie. Please search a new one!
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4" id="title"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div id="year" class="col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div id="type" class="col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div id="poster" class="col-md-4"></div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"></div>
+			<a id="imbdID" class="col-md-4"></a>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
